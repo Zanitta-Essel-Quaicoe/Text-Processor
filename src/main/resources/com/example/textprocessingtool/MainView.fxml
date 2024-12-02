@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.textprocessingtool.TextController" spacing="10" alignment="CENTER">
+    <TextArea fx:id="textInput" promptText="Enter your text here..." />
+    <TextField fx:id="regexInput" promptText="Enter regex pattern..." />
+    <TextField fx:id="replacementInput" promptText="Replacement text (optional)..." />
+    <HBox spacing="10">
+        <Button text="Search" onAction="#searchInText" />
+        <Button text="Replace" onAction="#replaceInText" />
+    </HBox>
+    <TextArea fx:id="resultsOutput" promptText="Results will appear here..." editable="false" />
+</VBox>
