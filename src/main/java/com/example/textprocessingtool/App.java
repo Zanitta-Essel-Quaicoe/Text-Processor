@@ -14,6 +14,7 @@ public class App extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Text Processing Tool");
         stage.setScene(scene);
+        stage.setWidth(300);
         stage.show();
     }
 
